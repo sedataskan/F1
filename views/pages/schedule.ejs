@@ -1,0 +1,61 @@
+<!doctype html>
+<head>
+
+  <link rel="shortcut icon" href="/css/favicon.ico" type="image/x-icon">
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>F1 - Schedule</title>
+  <link rel="stylesheet" href="css/main.css" media="all">
+  <link rel="stylesheet" href="css/w3.css">
+  <script src="https://kit.fontawesome.com/852539a4c9.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  
+</head>
+
+<body>
+
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+  <a href="/" class="w3-bar-item w3-button">Fixture <i class="fa-solid fa-list-ol"></i></a>
+  <a href="/schedule" class="w3-bar-item w3-button">Schedule <i class="fa-solid fa-calendar-days"></i></a>
+  <a href="/champions" class="w3-bar-item w3-button">Champions <i class="fa-solid fa-trophy"></i></a>
+</div>
+
+<div id="main">
+<div class="w3-teal">
+  <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <center> <h1>Schedule <i class="fa-solid fa-calendar-days"></i></h1> </center>
+  </div>
+</div>
+</div>
+
+  //work in progress
+
+<div class = "footer">
+    <footer>
+      <a class = "smedia" title="GitHub" href="https://github.com/imtribute12" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a class = "smedia" title="Contact Us" href="mailto:sedantaskan@gmail.com;" target="_blank">
+          <i class="fa-solid fa-envelope-open-text"></i></a>
+      <p> SNT© 2022</p>
+      <br>
+    </footer>
+</div>
+</div>
+  
+</body>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "10%";
+  document.getElementById("mySidebar").style.width = "10%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
